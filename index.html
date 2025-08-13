@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic HTML setup -->
+  <meta charset="UTF-8" /> <!-- Sets the character encoding -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Makes the site responsive -->
+  <title>My Portfolio</title> <!-- Title of the page (shown in browser tab) -->
+  <link rel="stylesheet" href="style.css" /> <!-- Linking external CSS file -->
+</head>
+<body>
+  
+  <!-- ===== HEADER & NAVIGATION ===== -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Pavan</div> <!-- Logo / Brand name -->
+      <ul class="nav-links">
+        <!-- Navigation links to different sections -->
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-text animate-slide-in">
+      <h1>Hello, I'm Pavan</h1> <!-- Main intro heading -->
+      <p>Web Developer & Designer</p> <!-- Short role description -->
+      <a href="#projects" class="btn">View My Work</a> <!-- Button linking to Projects section -->
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ME SECTION ===== -->
+  <section id="about" class="section animate-fade-in">
+    <h2>About Me</h2>
+    <p>
+      I’m Pavan VG, a web developer who loves creating clean, responsive, 
+      and engaging digital experiences. My projects include an Image Slider, 
+      Weather App, Landing Page, and Portfolio Website, each built with a 
+      focus on functionality and design. Always learning and exploring new tech, 
+      I aim to craft websites that work seamlessly and leave a lasting impact.
+    </p>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section animate-fade-in">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <!-- Project card 1 -->
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Image Slider.</p>
+      </div>
+      <!-- Project card 2 -->
+      <div class="project-card">
+        <h3>Project 2</h3>
+        <p>Weather App.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section animate-fade-in">
+    <h2>Contact Me</h2>
+    <form>
+      <!-- Input fields for contact form -->
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button> <!-- Form submit button -->
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Pavan. All rights reserved.</p> <!-- Footer text -->
+  </footer>
+
+  <!-- Link to JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
+

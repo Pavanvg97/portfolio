@@ -1,0 +1,178 @@
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  box-sizing: border-box; /* Includes padding & border inside element's total width/height */
+}
+
+/* ===== BODY STYLING ===== */
+body {
+  font-family: 'Segoe UI', sans-serif; /* Sets clean sans-serif font */
+  line-height: 1.6; /* Improves text readability */
+  background: #f0f0f0; /* Light grey background */
+  color: #333; /* Dark grey text color */
+  scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+/* ===== HEADER STYLING ===== */
+header {
+  background: #111; /* Dark background for header */
+  padding: 1rem 2rem; /* Space inside header */
+  position: fixed; /* Stays at top even when scrolling */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensures header stays above other elements */
+}
+
+/* ===== NAVIGATION BAR ===== */
+.navbar {
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: space-between; /* Space between logo and menu items */
+  align-items: center; /* Align vertically */
+}
+
+.logo {
+  color: #fff; /* White text for logo */
+  font-size: 1.5rem; /* Larger font size */
+}
+
+.nav-links {
+  list-style: none; /* Removes bullet points */
+  display: flex; /* Horizontal menu */
+  gap: 1.2rem; /* Space between links */
+}
+
+.nav-links a {
+  color: #fff; /* White links */
+  text-decoration: none; /* Removes underline */
+  font-weight: 500; /* Medium font weight */
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+  background: linear-gradient(to right, #00bcd4, #2196f3); /* Gradient background */
+  color: white; /* White text */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-align: center; /* Center align text */
+  padding: 2rem; /* Inner spacing */
+}
+
+.hero h1 {
+  font-size: 3rem; /* Large heading */
+  animation: slide-in-top 1s ease-out; /* Slide animation from top */
+}
+
+.hero p {
+  font-size: 1.2rem; /* Slightly larger text */
+  margin: 1rem 0; /* Space above & below */
+  animation: fade-in 2s ease-in; /* Fade-in animation */
+}
+
+/* ===== BUTTON STYLE ===== */
+.btn {
+  background: #fff; /* White background */
+  color: #2196f3; /* Blue text */
+  padding: 0.7rem 1.5rem; /* Space inside button */
+  border: none; /* No border */
+  text-decoration: none; /* No underline */
+  font-weight: bold; /* Bold text */
+  border-radius: 5px; /* Rounded corners */
+  transition: background 0.3s; /* Smooth background change on hover */
+}
+
+.btn:hover {
+  background: #ddd; /* Light grey on hover */
+}
+
+/* ===== GENERAL SECTION STYLE ===== */
+.section {
+  padding: 4rem 2rem; /* Large space around content */
+  text-align: center; /* Center align text */
+}
+
+/* ===== PROJECTS GRID ===== */
+.project-grid {
+  display: grid; /* CSS grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+  gap: 2rem; /* Space between cards */
+  margin-top: 2rem; /* Space from heading */
+}
+
+.project-card {
+  background: #fff; /* White card background */
+  padding: 2rem; /* Inner spacing */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s; /* Smooth movement on hover */
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Lifts card on hover */
+}
+
+/* ===== CONTACT FORM ===== */
+form {
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack vertically */
+  gap: 1rem; /* Space between fields */
+  max-width: 400px; /* Limit form width */
+  margin: auto; /* Center form */
+}
+
+form input,
+form textarea {
+  padding: 0.8rem; /* Space inside */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded edges */
+  font-size: 1rem; /* Normal text size */
+}
+
+form button {
+  padding: 0.8rem; /* Space inside button */
+  background: #2196f3; /* Blue background */
+  color: white; /* White text */
+  border: none; /* No border */
+  font-size: 1rem; /* Normal font size */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+form button:hover {
+  background: #0d8ae2; /* Darker blue on hover */
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #111; /* Dark background */
+  color: white; /* White text */
+  text-align: center; /* Center align text */
+  padding: 1rem; /* Space inside */
+  margin-top: 2rem; /* Space above footer */
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px); /* Start slightly above */
+    opacity: 0; /* Hidden */
+  }
+  100% {
+    transform: translateY(0); /* Final position */
+    opacity: 1; /* Fully visible */
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; } /* Start hidden */
+  to { opacity: 1; } /* End visible */
+}
+
+.animate-slide-in {
+  animation: slide-in-top 1s ease-out; /* Apply slide-in animation */
+}
+
+.animate-fade-in {
+  animation: fade-in 2s ease-in; /* Apply fade-in animation */
+}
